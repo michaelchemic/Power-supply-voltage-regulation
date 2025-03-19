@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "pid.h": "c"
+        }
+    },
+    "extensions": {}
+}
