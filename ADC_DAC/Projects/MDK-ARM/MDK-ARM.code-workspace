@@ -4,10 +4,6 @@
             "path": "."
         }
     ],
-    "settings": {
-        "files.associations": {
-            "pid.h": "c"
-        }
-    },
+    "settings": {},
     "extensions": {}
 }

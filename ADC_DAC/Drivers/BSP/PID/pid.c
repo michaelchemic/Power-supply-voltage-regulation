@@ -35,21 +35,7 @@ void PID_Init(PID_TypeDef *pid, float Kp, float Ki, float Kd, float max_output, 
  * @param  current_value: 当前测量值
  * @return 计算后的输出值
  */
-//float PID_Compute(PID_TypeDef *pid, float current_value) {
-//    float error = pid->target - current_value; // 计算误差
-//    pid->integral += error; // 积分
-//    float derivative = error - pid->prev_error; // 微分
-//    pid->output = pid->Kp * error + pid->Ki * pid->integral + pid->Kd * derivative; // 计算 PID 输出
 
-//    // 限制输出范围
-//    if (pid->output > pid->max_output) pid->output = pid->max_output;
-//    if (pid->output < pid->min_output) pid->output = pid->min_output;
-
-//    pid->prev_error = error; // 记录本次误差
-
-//    return pid->output;
-
-//}
 float PID_Compute(PID_TypeDef *pid, float current_value) {
     float error = pid->target - current_value;       // 计算误差
     pid->integral += error;                          // 积分

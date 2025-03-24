@@ -76,8 +76,9 @@ int main(void)
             adc_dma_enable(ADC_DMA_BUF_SIZE);                   /* 启动下一次ADC DMA采集 */
             
             HAL_Delay(5);
-     
-            printf("%d\n",dac_output);
+
+            printf("%d,%d\n",dac_output,adc_value);//DAC和ADC值串口打印，上位机观察曲线。
+           
             while(__HAL_UART_GET_FLAG(&g_uart1_handle,UART_FLAG_TC)!=SET);           /* 等待发送结束 */
             //printf("\r\n\r\n");             /* 插入换行 */
             g_usart_rx_sta = 0;
