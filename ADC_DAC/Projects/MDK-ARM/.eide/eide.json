@@ -67,6 +67,12 @@
               },
               {
                 "path": "../../Drivers/BSP/PID/pid.c"
+              },
+              {
+                "path": "../../Drivers/BSP/CRC16/crc16.c"
+              },
+              {
+                "path": "../../Drivers/BSP/Modbus_RTU/modbus.c"
               }
             ],
             "folders": []

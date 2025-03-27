@@ -1,4 +1,5 @@
-../../output/main.o: ..\..\User\main.c ..\..\Drivers\.\SYSTEM\sys\sys.h \
+../../output/rs485.o: ..\..\Drivers\BSP\RS485\rs485.c \
+  ..\..\Drivers\.\BSP\RS485\rs485.h ..\..\Drivers\.\SYSTEM\sys\sys.h \
   ..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
   ..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h \
   ..\..\Drivers\CMSIS\Include\core_cm4.h \
@@ -66,13 +67,4 @@
   ..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h \
   ..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h \
   ..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hcd.h \
-  ..\..\Drivers\.\SYSTEM\usart\usart.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  ..\..\Drivers\.\SYSTEM\delay\delay.h ..\..\Drivers\.\BSP\LED\led.h \
-  ..\..\Drivers\.\BSP\LCD\lcd.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
-  ..\..\Drivers\.\BSP\ADC\adc.h ..\..\Drivers\.\BSP\DAC\dac.h \
-  ..\..\Drivers\.\BSP\PID\pid.h ..\..\Drivers\.\BSP\RS485\rs485.h \
-  ..\..\Drivers\.\BSP\Modbus_RTU\modbus.h \
-  ..\..\Drivers\BSP\CRC16\crc16.h ..\..\Drivers\.\BSP\IEEE754\IEEE754.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h
+  ..\..\Drivers\.\SYSTEM\delay\delay.h

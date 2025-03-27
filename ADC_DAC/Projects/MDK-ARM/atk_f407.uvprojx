@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\User;..\..\Drivers;..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include;..\..\Drivers\CMSIS\Include;..\..\Drivers\STM32F4xx_HAL_Driver\Inc;..\..\Middlewares</IncludePath>
+              <IncludePath>..\..\User;..\..\Drivers;..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include;..\..\Drivers\CMSIS\Include;..\..\Drivers\STM32F4xx_HAL_Driver\Inc;..\..\Middlewares;..\..\Drivers\BSP\CRC16;..\..\Drivers\BSP\Modbus_RTU;..\..\Drivers\BSP\IEEE754;..\..\Drivers\BSP\RS485</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -458,6 +458,26 @@
               <FileName>pid.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Drivers\BSP\PID\pid.c</FilePath>
+            </File>
+            <File>
+              <FileName>crc16.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Drivers\BSP\CRC16\crc16.c</FilePath>
+            </File>
+            <File>
+              <FileName>modbus.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Drivers\BSP\Modbus_RTU\modbus.c</FilePath>
+            </File>
+            <File>
+              <FileName>IEEE754.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Drivers\BSP\IEEE754\IEEE754.c</FilePath>
+            </File>
+            <File>
+              <FileName>rs485.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Drivers\BSP\RS485\rs485.c</FilePath>
             </File>
           </Files>
         </Group>
