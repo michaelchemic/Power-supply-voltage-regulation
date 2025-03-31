@@ -15,6 +15,7 @@
 "..\..\output\modbus.o"
 "..\..\output\ieee754.o"
 "..\..\output\rs485.o"
+"..\..\output\acs712.o"
 "..\..\output\stm32f4xx_hal.o"
 "..\..\output\stm32f4xx_hal_cortex.o"
 "..\..\output\stm32f4xx_hal_dma.o"

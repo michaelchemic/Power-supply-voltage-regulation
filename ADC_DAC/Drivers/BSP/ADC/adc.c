@@ -219,14 +219,7 @@ void adc_dma_init(uint32_t mar)
 }
 void adc2_dma_init(uint32_t mar)
 {
-    if ((uint32_t)ADC2_ADCX_DMASx > (uint32_t)DMA2)     /* 大于DMA1_Stream7, 则为DMA2 */
-    {
-        __HAL_RCC_DMA2_CLK_ENABLE();                    /* DMA2时钟使能 */
-    }
-    else 
-    {
-        __HAL_RCC_DMA1_CLK_ENABLE();                    /* DMA1时钟使能 */
-    }
+    __HAL_RCC_DMA2_CLK_ENABLE();                    /* DMA2时钟使能 */
 
     /* DMA配置 */
     g_dma_adc2_handle.Instance = ADC2_ADCX_DMASx;                             /* 设置DMA数据流 */

@@ -73,6 +73,15 @@
               },
               {
                 "path": "../../Drivers/BSP/Modbus_RTU/modbus.c"
+              },
+              {
+                "path": "../../Drivers/BSP/IEEE754/IEEE754.c"
+              },
+              {
+                "path": "../../Drivers/BSP/RS485/rs485.c"
+              },
+              {
+                "path": "../../Drivers/BSP/ACS712/ACS712.c"
               }
             ],
             "folders": []
@@ -309,6 +318,11 @@
           "../../Drivers/CMSIS/Include",
           "../../Drivers/STM32F4xx_HAL_Driver/Inc",
           "../../Middlewares",
+          "../../Drivers/BSP/CRC16",
+          "../../Drivers/BSP/Modbus_RTU",
+          "../../Drivers/BSP/IEEE754",
+          "../../Drivers/BSP/RS485",
+          "../../Drivers/BSP/ACS712",
           "RTE/_ADC"
         ],
         "libList": [],

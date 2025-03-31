@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\User;..\..\Drivers;..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include;..\..\Drivers\CMSIS\Include;..\..\Drivers\STM32F4xx_HAL_Driver\Inc;..\..\Middlewares;..\..\Drivers\BSP\CRC16;..\..\Drivers\BSP\Modbus_RTU;..\..\Drivers\BSP\IEEE754;..\..\Drivers\BSP\RS485</IncludePath>
+              <IncludePath>..\..\User;..\..\Drivers;..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include;..\..\Drivers\CMSIS\Include;..\..\Drivers\STM32F4xx_HAL_Driver\Inc;..\..\Middlewares;..\..\Drivers\BSP\CRC16;..\..\Drivers\BSP\Modbus_RTU;..\..\Drivers\BSP\IEEE754;..\..\Drivers\BSP\RS485;..\..\Drivers\BSP\ACS712</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -478,6 +478,11 @@
               <FileName>rs485.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Drivers\BSP\RS485\rs485.c</FilePath>
+            </File>
+            <File>
+              <FileName>ACS712.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Drivers\BSP\ACS712\ACS712.c</FilePath>
             </File>
           </Files>
         </Group>

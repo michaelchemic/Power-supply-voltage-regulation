@@ -4,11 +4,6 @@
             "path": "."
         }
     ],
-    "settings": {
-        "files.associations": {
-            "modbus.h": "c",
-            "crc16.h": "c"
-        }
-    },
+    "settings": {},
     "extensions": {}
 }
