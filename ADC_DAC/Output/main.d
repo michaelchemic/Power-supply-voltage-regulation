@@ -1,4 +1,6 @@
-../../output/main.o: ..\..\User\main.c ..\..\Drivers\.\SYSTEM\sys\sys.h \
+../../output/main.o: ..\..\User\main.c \
+  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+  ..\..\Drivers\.\SYSTEM\sys\sys.h \
   ..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
   ..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h \
   ..\..\Drivers\CMSIS\Include\core_cm4.h \

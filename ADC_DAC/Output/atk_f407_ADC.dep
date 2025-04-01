@@ -1,7 +1,8 @@
 Dependencies for Project 'atk_f407', Target 'ADC': (DO NOT MODIFY !)
 CompilerVersion: 6180000::V6.18::ARMCLANG
 F (..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s)(0x675F8B07)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto -c-gdwarf-4-ID:/Software/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 537" -Wa,armasm,--pd,"STM32F407xx SETA 1"-o ../../output/startup_stm32f407xx.o)
-F (..\..\User\main.c)(0x67EA807D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../User -I ../../Drivers -I ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../../Drivers/CMSIS/Include -I ../../Drivers/STM32F4xx_HAL_Driver/Inc -I ../../Middlewares -I ../../Drivers/BSP/CRC16 -I ../../Drivers/BSP/Modbus_RTU -I ../../Drivers/BSP/IEEE754 -I ../../Drivers/BSP/RS485 -I ../../Drivers/BSP/ACS712-ID:/Software/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="537" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ../../output/main.o -MD)
+F (..\..\User\main.c)(0x67EB6E08)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../User -I ../../Drivers -I ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../../Drivers/CMSIS/Include -I ../../Drivers/STM32F4xx_HAL_Driver/Inc -I ../../Middlewares -I ../../Drivers/BSP/CRC16 -I ../../Drivers/BSP/Modbus_RTU -I ../../Drivers/BSP/IEEE754 -I ../../Drivers/BSP/RS485 -I ../../Drivers/BSP/ACS712-ID:/Software/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="537" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ../../output/main.o -MD)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625333C6)
 I (..\..\Drivers\.\SYSTEM\sys\sys.h)(0x675F8B07)
 I (..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x675F8B07)
 I (..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x675F8B07)
@@ -27,7 +28,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -111,7 +112,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -179,7 +180,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -248,7 +249,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -318,7 +319,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -387,7 +388,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -459,7 +460,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -530,7 +531,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -578,7 +579,7 @@ I (..\..\Drivers\.\SYSTEM\usart\usart.h)(0x675F8B07)
 I (D:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625333C6)
 I (..\..\Drivers\.\BSP\LCD\lcd_ex.c)(0x675F9812)
 I (..\..\Drivers\.\SYSTEM\delay\delay.h)(0x675F8B07)
-F (..\..\Drivers\BSP\ADC\adc.c)(0x67EA7F65)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../User -I ../../Drivers -I ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../../Drivers/CMSIS/Include -I ../../Drivers/STM32F4xx_HAL_Driver/Inc -I ../../Middlewares -I ../../Drivers/BSP/CRC16 -I ../../Drivers/BSP/Modbus_RTU -I ../../Drivers/BSP/IEEE754 -I ../../Drivers/BSP/RS485 -I ../../Drivers/BSP/ACS712-ID:/Software/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="537" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ../../output/adc.o -MD)
+F (..\..\Drivers\BSP\ADC\adc.c)(0x67EB6CB5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../User -I ../../Drivers -I ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../../Drivers/CMSIS/Include -I ../../Drivers/STM32F4xx_HAL_Driver/Inc -I ../../Middlewares -I ../../Drivers/BSP/CRC16 -I ../../Drivers/BSP/Modbus_RTU -I ../../Drivers/BSP/IEEE754 -I ../../Drivers/BSP/RS485 -I ../../Drivers/BSP/ACS712-ID:/Software/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="537" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ../../output/adc.o -MD)
 I (..\..\Drivers\.\BSP\ADC\adc.h)(0x67EA4CE3)
 I (..\..\Drivers\.\SYSTEM\sys\sys.h)(0x675F8B07)
 I (..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x675F8B07)
@@ -605,7 +606,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -649,7 +650,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hcd.h)(0x675F8B07)
 I (..\..\Drivers\.\SYSTEM\delay\delay.h)(0x675F8B07)
-F (..\..\Drivers\BSP\DAC\dac.c)(0x675F8B08)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../User -I ../../Drivers -I ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../../Drivers/CMSIS/Include -I ../../Drivers/STM32F4xx_HAL_Driver/Inc -I ../../Middlewares -I ../../Drivers/BSP/CRC16 -I ../../Drivers/BSP/Modbus_RTU -I ../../Drivers/BSP/IEEE754 -I ../../Drivers/BSP/RS485 -I ../../Drivers/BSP/ACS712-ID:/Software/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="537" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ../../output/dac.o -MD)
+F (..\..\Drivers\BSP\DAC\dac.c)(0x67EB6D05)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../User -I ../../Drivers -I ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../../Drivers/CMSIS/Include -I ../../Drivers/STM32F4xx_HAL_Driver/Inc -I ../../Middlewares -I ../../Drivers/BSP/CRC16 -I ../../Drivers/BSP/Modbus_RTU -I ../../Drivers/BSP/IEEE754 -I ../../Drivers/BSP/RS485 -I ../../Drivers/BSP/ACS712-ID:/Software/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="537" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ../../output/dac.o -MD)
 I (..\..\Drivers\.\BSP\DAC\dac.h)(0x675F8B08)
 I (..\..\Drivers\.\SYSTEM\sys\sys.h)(0x675F8B07)
 I (..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x675F8B07)
@@ -676,7 +677,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -746,7 +747,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -789,10 +790,10 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hcd.h)(0x675F8B07)
-F (..\..\Drivers\BSP\CRC16\crc16.c)(0x67E3A2AE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../User -I ../../Drivers -I ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../../Drivers/CMSIS/Include -I ../../Drivers/STM32F4xx_HAL_Driver/Inc -I ../../Middlewares -I ../../Drivers/BSP/CRC16 -I ../../Drivers/BSP/Modbus_RTU -I ../../Drivers/BSP/IEEE754 -I ../../Drivers/BSP/RS485 -I ../../Drivers/BSP/ACS712-ID:/Software/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="537" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ../../output/crc16.o -MD)
+F (..\..\Drivers\BSP\CRC16\crc16.c)(0x67EB6D0B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../User -I ../../Drivers -I ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../../Drivers/CMSIS/Include -I ../../Drivers/STM32F4xx_HAL_Driver/Inc -I ../../Middlewares -I ../../Drivers/BSP/CRC16 -I ../../Drivers/BSP/Modbus_RTU -I ../../Drivers/BSP/IEEE754 -I ../../Drivers/BSP/RS485 -I ../../Drivers/BSP/ACS712-ID:/Software/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="537" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ../../output/crc16.o -MD)
 I (..\..\Drivers\BSP\CRC16\crc16.h)(0x67E21E93)
 I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625333C8)
-F (..\..\Drivers\BSP\Modbus_RTU\modbus.c)(0x67EA7911)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../User -I ../../Drivers -I ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../../Drivers/CMSIS/Include -I ../../Drivers/STM32F4xx_HAL_Driver/Inc -I ../../Middlewares -I ../../Drivers/BSP/CRC16 -I ../../Drivers/BSP/Modbus_RTU -I ../../Drivers/BSP/IEEE754 -I ../../Drivers/BSP/RS485 -I ../../Drivers/BSP/ACS712-ID:/Software/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="537" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ../../output/modbus.o -MD)
+F (..\..\Drivers\BSP\Modbus_RTU\modbus.c)(0x67EB6C9B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../User -I ../../Drivers -I ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../../Drivers/CMSIS/Include -I ../../Drivers/STM32F4xx_HAL_Driver/Inc -I ../../Middlewares -I ../../Drivers/BSP/CRC16 -I ../../Drivers/BSP/Modbus_RTU -I ../../Drivers/BSP/IEEE754 -I ../../Drivers/BSP/RS485 -I ../../Drivers/BSP/ACS712-ID:/Software/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="537" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ../../output/modbus.o -MD)
 I (..\..\Drivers\BSP\Modbus_RTU\modbus.h)(0x67EA75A6)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x675F8B07)
 I (..\..\User\stm32f4xx_hal_conf.h)(0x675F8B07)
@@ -818,7 +819,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -895,7 +896,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -939,7 +940,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hcd.h)(0x675F8B07)
 I (..\..\Drivers\.\SYSTEM\delay\delay.h)(0x675F8B07)
-F (..\..\Drivers\BSP\ACS712\ACS712.c)(0x67EA7A92)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../User -I ../../Drivers -I ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../../Drivers/CMSIS/Include -I ../../Drivers/STM32F4xx_HAL_Driver/Inc -I ../../Middlewares -I ../../Drivers/BSP/CRC16 -I ../../Drivers/BSP/Modbus_RTU -I ../../Drivers/BSP/IEEE754 -I ../../Drivers/BSP/RS485 -I ../../Drivers/BSP/ACS712-ID:/Software/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="537" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ../../output/acs712.o -MD)
+F (..\..\Drivers\BSP\ACS712\ACS712.c)(0x67EB6DCE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../User -I ../../Drivers -I ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../../Drivers/CMSIS/Include -I ../../Drivers/STM32F4xx_HAL_Driver/Inc -I ../../Middlewares -I ../../Drivers/BSP/CRC16 -I ../../Drivers/BSP/Modbus_RTU -I ../../Drivers/BSP/IEEE754 -I ../../Drivers/BSP/RS485 -I ../../Drivers/BSP/ACS712-ID:/Software/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="537" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o ../../output/acs712.o -MD)
 I (..\..\Drivers\.\BSP\ACS712\ACS712.h)(0x67EA7963)
 I (..\..\Drivers\.\SYSTEM\sys\sys.h)(0x675F8B07)
 I (..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x675F8B07)
@@ -966,7 +967,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -1038,7 +1039,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -1106,7 +1107,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -1174,7 +1175,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -1242,7 +1243,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -1310,7 +1311,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -1378,7 +1379,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -1446,7 +1447,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -1514,7 +1515,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -1582,7 +1583,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -1650,7 +1651,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -1718,7 +1719,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -1786,7 +1787,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -1854,7 +1855,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -1922,7 +1923,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -1990,7 +1991,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -2058,7 +2059,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -2126,7 +2127,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -2194,7 +2195,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -2262,7 +2263,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
@@ -2330,7 +2331,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x675F8B07)
-I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x675F8B07)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x67EB6748)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x675F8B07)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x675F8B07)
