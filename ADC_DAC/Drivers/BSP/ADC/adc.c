@@ -6,10 +6,10 @@ ADC_HandleTypeDef g_adc2_handle;
 
 /* 单通道ADC采集 DMA读取 */
 DMA_HandleTypeDef g_dma_adc_handle;  /* 与ADC关联的DMA句柄 */
-DMA_HandleTypeDef g_dma_adc2_handle; /* 与ADC关联的DMA句柄 */
+//DMA_HandleTypeDef g_dma_adc2_handle; /* 与ADC关联的DMA句柄 */
 
 uint8_t g_adc_dma_sta = 0;  /* DMA传输状态标志, 0,未完成; 1, 已完成 */
-uint8_t g_adc2_dma_sta = 0; /* DMA传输状态标志, 0,未完成; 1, 已完成 */
+//uint8_t g_adc2_dma_sta = 0; /* DMA传输状态标志, 0,未完成; 1, 已完成 */
 /**
  * @brief       ADC初始化函数
  *   @note      本函数支持ADC1/ADC2任意通道, 但是不支持ADC3
@@ -45,7 +45,7 @@ void adc_init(void)
     g_adc2_handle.Init.NbrOfDiscConversion = 0;                              /* 不连续采样通道数为0 */
     g_adc2_handle.Init.ExternalTrigConv = ADC_SOFTWARE_START;                /* 软件触发 */
     g_adc2_handle.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE; /* 使用软件触发 */
-    g_adc2_handle.Init.DMAContinuousRequests = DISABLE;                      /* 关闭DMA请求 */
+    g_adc2_handle.Init.DMAContinuousRequests = ENABLE;                       /* TODO:关闭DMA请求 *******************/
     HAL_ADC_Init(&g_adc2_handle);
 }
 
@@ -216,40 +216,40 @@ void adc_dma_init(uint32_t mar)
     HAL_ADC_Start_DMA(&g_adc_handle, &mar, sizeof(uint16_t)); /* 开始DMA数据传输 */
     __HAL_DMA_ENABLE_IT(&g_dma_adc_handle, DMA_IT_TC);        /* TCIE =1 , 使能传输完成中断 */
 }
-void adc2_dma_init(uint32_t mar)
-{
-    __HAL_RCC_DMA2_CLK_ENABLE(); /* DMA2时钟使能 */
+//void adc2_dma_init(uint32_t mar)
+//{
+//    __HAL_RCC_DMA2_CLK_ENABLE(); /* DMA2时钟使能 */
 
-    /* DMA配置 */
-    g_dma_adc2_handle.Instance = ADC2_ADCX_DMASx;                         /* 设置DMA数据流 */
-    g_dma_adc2_handle.Init.Channel = DMA_CHANNEL_1;                       /* 设置DMA通道 */
-    g_dma_adc2_handle.Init.Direction = DMA_PERIPH_TO_MEMORY;              /* DIR = 1 ,  外设到存储器模式 */
-    g_dma_adc2_handle.Init.PeriphInc = DMA_PINC_DISABLE;                  /* 外设非增量模式 */
-    g_dma_adc2_handle.Init.MemInc = DMA_MINC_ENABLE;                      /* 存储器增量模式 */
-    g_dma_adc2_handle.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD; /* 外设数据长度:16位 */
-    g_dma_adc2_handle.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;    /* 存储器数据长度:16位 */
-    g_dma_adc2_handle.Init.Mode = DMA_NORMAL;                             /* 外设流控模式 */
-    g_dma_adc2_handle.Init.Priority = DMA_PRIORITY_MEDIUM;                /* 中等优先级 */
-    HAL_DMA_Init(&g_dma_adc2_handle);                                     /* 初始化DMA */
-    HAL_DMA_Start(&g_dma_adc2_handle, (uint32_t)&ADC2->DR, mar, 0);       /* 配置DMA传输参数 */
+//    /* DMA配置 */
+//    g_dma_adc2_handle.Instance = ADC2_ADCX_DMASx;                         /* 设置DMA数据流 */
+//    g_dma_adc2_handle.Init.Channel = DMA_CHANNEL_1;                       /* 设置DMA通道 */
+//    g_dma_adc2_handle.Init.Direction = DMA_PERIPH_TO_MEMORY;              /* DIR = 1 ,  外设到存储器模式 */
+//    g_dma_adc2_handle.Init.PeriphInc = DMA_PINC_DISABLE;                  /* 外设非增量模式 */
+//    g_dma_adc2_handle.Init.MemInc = DMA_MINC_ENABLE;                      /* 存储器增量模式 */
+//    g_dma_adc2_handle.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD; /* 外设数据长度:16位 */
+//    g_dma_adc2_handle.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;    /* 存储器数据长度:16位 */
+//    g_dma_adc2_handle.Init.Mode = DMA_NORMAL;                             /* 外设流控模式 */
+//    g_dma_adc2_handle.Init.Priority = DMA_PRIORITY_MEDIUM;                /* 中等优先级 */
+//    HAL_DMA_Init(&g_dma_adc2_handle);                                     /* 初始化DMA */
+//    HAL_DMA_Start(&g_dma_adc2_handle, (uint32_t)&ADC2->DR, mar, 0);       /* 配置DMA传输参数 */
 
-    g_adc2_handle.DMA_Handle = &g_dma_adc2_handle; /* 设置ADC对应的DMA */
-    adc_init();                                    /* 初始化ADC */
-    /**
-     *   需要在配置的时候开，但这里为了保证不变更之前的代码，
-     *   另加一行设置g_adc_handle.Init.ContinuousConvMode = ENABLE;
-     *   配置ADC连续转换, DMA传输ADC数据
-     */
-    SET_BIT(g_adc2_handle.Instance->CR2, ADC_CR2_CONT); /* CONT = 1, 连续转换模式 */
+//    g_adc2_handle.DMA_Handle = &g_dma_adc2_handle; /* 设置ADC对应的DMA */
+//    adc_init();                                    /* 初始化ADC */
+//    /**
+//     *   需要在配置的时候开，但这里为了保证不变更之前的代码，
+//     *   另加一行设置g_adc_handle.Init.ContinuousConvMode = ENABLE;
+//     *   配置ADC连续转换, DMA传输ADC数据
+//     */
+//    SET_BIT(g_adc2_handle.Instance->CR2, ADC_CR2_CONT); /* CONT = 1, 连续转换模式 */
 
-    /* 配置对应ADC通道 */
-    adc_channel_set(&g_adc2_handle, ADC2_ADCX_CHY, 1, ADC_SAMPLETIME_480CYCLES);
+//    /* 配置对应ADC通道 */
+//    adc_channel_set(&g_adc2_handle, ADC2_ADCX_CHY, 1, ADC_SAMPLETIME_480CYCLES);
 
-    HAL_NVIC_SetPriority(ADC2_ADCX_DMASx_IRQn, 3, 4);          /* 设置DMA中断优先级为3，子优先级为3 */
-    HAL_NVIC_EnableIRQ(ADC2_ADCX_DMASx_IRQn);                  /* 使能DMA中断 */
-    HAL_ADC_Start_DMA(&g_adc2_handle, &mar, sizeof(uint16_t)); /* 开始DMA数据传输 */
-    __HAL_DMA_ENABLE_IT(&g_dma_adc2_handle, DMA_IT_TC);        /* TCIE =1 , 使能传输完成中断 */
-}
+//    HAL_NVIC_SetPriority(ADC2_ADCX_DMASx_IRQn, 3, 4);          /* 设置DMA中断优先级为3，子优先级为3 */
+//    HAL_NVIC_EnableIRQ(ADC2_ADCX_DMASx_IRQn);                  /* 使能DMA中断 */
+//    HAL_ADC_Start_DMA(&g_adc2_handle, &mar, sizeof(uint16_t)); /* 开始DMA数据传输 */
+//    __HAL_DMA_ENABLE_IT(&g_dma_adc2_handle, DMA_IT_TC);        /* TCIE =1 , 使能传输完成中断 */
+//}
 /**
  * @brief       使能一次ADC DMA传输
  * @param       ndtr: DMA传输的次数
@@ -267,17 +267,17 @@ void adc_dma_enable(uint16_t ndtr)
     ADC_ADCX->CR2 |= 1 << 30;        /* 启动规则转换通道 */
 }
 
-void adc2_dma_enable(uint16_t ndtr2)
-{
-    __HAL_ADC_DISABLE(&g_adc2_handle); /* 先关闭ADC */
+//void adc2_dma_enable(uint16_t ndtr2)
+//{
+//    __HAL_ADC_DISABLE(&g_adc2_handle); /* 先关闭ADC */
 
-    __HAL_DMA_DISABLE(&g_dma_adc2_handle);    /* 关闭DMA传输 */
-    g_dma_adc2_handle.Instance->NDTR = ndtr2; /* 重设DMA传输数据量 */
-    __HAL_DMA_ENABLE(&g_dma_adc2_handle);     /* 开启DMA传输 */
+//    __HAL_DMA_DISABLE(&g_dma_adc2_handle);    /* 关闭DMA传输 */
+//    g_dma_adc2_handle.Instance->NDTR = ndtr2; /* 重设DMA传输数据量 */
+//    __HAL_DMA_ENABLE(&g_dma_adc2_handle);     /* 开启DMA传输 */
 
-    __HAL_ADC_ENABLE(&g_adc2_handle); /* 重新启动ADC */
-    ADC2_ADCX->CR2 |= 1 << 30;        /* 启动规则转换通道 */
-}
+//    __HAL_ADC_ENABLE(&g_adc2_handle); /* 重新启动ADC */
+//    ADC2_ADCX->CR2 |= 1 << 30;        /* 启动规则转换通道 */
+//}
 
 /**
  * @brief       ADC DMA采集中断服务函数
@@ -293,11 +293,11 @@ void ADC_ADCX_DMASx_IRQHandler(void)
     }
 }
 
-void ADC2_ADCX_DMASx_IRQHandler(void)
-{
-    if (ADC2_ADCX_DMASx_IS_TC()) /* 判断DMA数据传输完成 */
-    {
-        g_adc2_dma_sta = 1;       /* 标记DMA传输完成 */
-        ADC2_ADCX_DMASx_CLR_TC(); /* 清除DMA2 数据流4 传输完成中断 */
-    }
-}
+//void ADC2_ADCX_DMASx_IRQHandler(void)
+//{
+//    if (ADC2_ADCX_DMASx_IS_TC()) /* 判断DMA数据传输完成 */
+//    {
+//        g_adc2_dma_sta = 1;       /* 标记DMA传输完成 */
+//        ADC2_ADCX_DMASx_CLR_TC(); /* 清除DMA2 数据流4 传输完成中断 */
+//    }
+//}
