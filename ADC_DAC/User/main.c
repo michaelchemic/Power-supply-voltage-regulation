@@ -13,9 +13,13 @@
 #include "./BSP/ACS712/ACS712.h"
 
 #define ADC_DMA_BUF_SIZE 50 /* ADC DMA采集 BUF大小, 应等于ADC通道数的整数倍 */
+//48V分压电阻配置
+//#define R1 210.0f // 分压电阻 R1 21K
+//#define R2 10.0f  // 分压电阻 R2 1K
 
-#define R1 210.0f // 分压电阻 R1
-#define R2 10.0f  // 分压电阻 R2
+//110V分压电阻配置
+#define R1 510.0f // 分压电阻 R1 51K
+#define R2 10.0f  // 分压电阻 R2 1K
 
 uint16_t g_adc_dma_buf[ADC_DMA_BUF_SIZE]; /* ADC DMA BUF */
 
@@ -67,11 +71,10 @@ int main(void)
 
     // 初始化 PID 参数 (Kp, Ki, Kd, 最大输出, 最小输出)
     // PID_Init(&voltage_pid, 1.5f, 0.8f, 0.1f, 4095.0f, 0.0f); // 1.5 0.8
-    PID_Init(&voltage_pid, 1.5f, 0.8f, 0.1f, 4095.0f, 0.0f); // 1.5 0.8
+    PID_Init(&voltage_pid, 1.5f, 0.8f, 0.1f, 3300.0f, 0.0f); // 1.5 0.8***********限制最大电压160V，电源模块最大160V输入。
 
-    voltage_pid.target = 48.0f; //设置PID目标电压 48V
-
-    Current_Start(); // 电压分段设置成48V
+    voltage_pid.target = 110.0f; //设置PID目标电压***********110V
+    Current_Start(); // 电压分段设置成***********72V
     
     HAL_Delay(5000);
 
@@ -114,7 +117,7 @@ int main(void)
 
             if (adc2_value <= Value)
             {
-                Current_Comparator(); // 电压设置成48V
+                Current_Comparator(); // 电压设置成***********72V
                 dac_voltage=0;
             }
             else 

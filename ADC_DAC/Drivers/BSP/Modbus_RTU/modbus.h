@@ -34,8 +34,10 @@ void Modbus_Init(UART_HandleTypeDef *huart);    //端口初始化
 ModbusStatus Modbus_Receive(uint8_t *rxBuffer, uint16_t len);   //Modbus接收
 ModbusStatus Modbus_Process(uint8_t *rxBuffer, uint16_t len, uint8_t *txBuffer, uint16_t *txLen); //协议处理
 
+ModbusStatus Modbus_Process_Set_72V(uint8_t *rxBuffer, uint16_t len, uint8_t *txBuffer, uint16_t *txLen); //协议处理
 ModbusStatus Modbus_Process_Set_48V(uint8_t *rxBuffer, uint16_t len, uint8_t *txBuffer, uint16_t *txLen); //协议处理
 ModbusStatus Modbus_Process_Set_36V(uint8_t *rxBuffer, uint16_t len, uint8_t *txBuffer, uint16_t *txLen); //协议处理
 ModbusStatus Modbus_Process_Set_24V(uint8_t *rxBuffer, uint16_t len, uint8_t *txBuffer, uint16_t *txLen); //协议处理
 ModbusStatus Modbus_Process_Set_12V(uint8_t *rxBuffer, uint16_t len, uint8_t *txBuffer, uint16_t *txLen); //协议处理
+
 #endif
